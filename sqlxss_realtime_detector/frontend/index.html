@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI/ML Threat Detector</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🛡️ AI/ML for SQLi & XSS Threat Detection</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>🔍 Check Single Payload</h2>
+      <form id="threat-form">
+        <textarea id="payload" name="payload" placeholder="Enter payload here..."></textarea>
+        <button type="submit">Check</button>
+      </form>
+      <div id="payload-error" class="error-message"></div>
+      <div id="payload-result"></div>
+    </section>
+    
+    <section>
+      <h2>📂 Upload File for Bulk Check</h2>
+      <form id="file-form" enctype="multipart/form-data">
+        <input type="file" id="file-input" name="file" accept=".txt,.csv" />
+        <button type="submit">Check File</button>
+      </form>
+      <div id="file-error" class="error-message"></div>
+      <div id="file-result"></div>
+    </section>
+  </main>
+</body>
+</html>
