@@ -104,7 +104,17 @@ You can:
 - 🔄 End-to-end pipeline with FastAPI + Redis queue + frontend
 
 ---
+## 🔗 References
 
+- [OWASP – SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection)  
+- [OWASP – Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)  
+- [FastAPI Docs](https://fastapi.tiangolo.com/)  
+- [Scikit-learn ML Docs](https://scikit-learn.org/stable/)  
+- [Redis Official Documentation](https://redis.io/docs/)  
+- [Docker Docs](https://docs.docker.com/)  
+- [Python Redis Queue Tutorial](https://realpython.com/python-redis/)  
+
+---
 ## 📜 License
 
 This project is licensed under the **MIT License**.
